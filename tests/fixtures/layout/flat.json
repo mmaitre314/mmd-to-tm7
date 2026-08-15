@@ -1,0 +1,110 @@
+{
+  "version": "1",
+  "provenance": {
+    "mermaid_version": "bundled-in-mermaidx-0.9.4",
+    "renderer": "mermaidx",
+    "renderer_version": "0.9.4",
+    "source_sha256": "9d6ca588389fcb0669dd533043eec65dce7bec7db680811d594a339cab029d9f",
+    "generated_at": "FIXED"
+  },
+  "canvas": {
+    "width": 449.5703125,
+    "height": 81.9375,
+    "origin_offset": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "direction": "LR"
+  },
+  "nodes": [
+    {
+      "id": "c",
+      "svg_id": "gd14-flowchart-c-3",
+      "label": "Gamma",
+      "shape": "rect",
+      "x": 302.390625,
+      "y": 0.0,
+      "width": 123.1796875,
+      "height": 48.625,
+      "parent": null
+    },
+    {
+      "id": "b",
+      "svg_id": "gd14-flowchart-b-1",
+      "label": "Beta",
+      "shape": "rect",
+      "x": 155.4921875,
+      "y": 0.0,
+      "width": 96.8984375,
+      "height": 48.625,
+      "parent": null
+    },
+    {
+      "id": "a",
+      "svg_id": "gd14-flowchart-a-0",
+      "label": "Alpha",
+      "shape": "rect",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 105.4921875,
+      "height": 48.625,
+      "parent": null
+    }
+  ],
+  "clusters": [],
+  "edges": [
+    {
+      "id": "L_b_c_0",
+      "source": "b",
+      "target": "c",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          252.39100000000002,
+          24.313000000000002
+        ],
+        [
+          298.391,
+          24.313000000000002
+        ]
+      ],
+      "start_point": [
+        252.39100000000002,
+        24.313000000000002
+      ],
+      "end_point": [
+        298.391,
+        24.313000000000002
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_a_b_0",
+      "source": "a",
+      "target": "b",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          105.492,
+          24.313000000000002
+        ],
+        [
+          151.492,
+          24.313000000000002
+        ]
+      ],
+      "start_point": [
+        105.492,
+        24.313000000000002
+      ],
+      "end_point": [
+        151.492,
+        24.313000000000002
+      ],
+      "handle_point": null
+    }
+  ],
+  "warnings": []
+}

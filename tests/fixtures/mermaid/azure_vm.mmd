@@ -1,0 +1,8 @@
+flowchart LR
+  user[User] --> lb[Load Balancer]
+  subgraph azure[Azure Subscription]
+    lb --> vm[Virtual Machine]
+    vm --> disk[(Managed Disk)]
+    vm --> kv[(Key Vault)]
+  end
+  vm --> log[Log Analytics]

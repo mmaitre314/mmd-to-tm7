@@ -1,0 +1,159 @@
+{
+  "version": "1",
+  "provenance": {
+    "mermaid_version": "bundled-in-mermaidx-0.9.4",
+    "renderer": "mermaidx",
+    "renderer_version": "0.9.4",
+    "source_sha256": "9c83561ed4a32bd7e90999d7c6aff9b91a5f8fe0ab0aa4d74019218dad5171f1",
+    "generated_at": "FIXED"
+  },
+  "canvas": {
+    "width": 567.28125,
+    "height": 152.71729296774745,
+    "origin_offset": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "direction": "LR"
+  },
+  "nodes": [
+    {
+      "id": "sink",
+      "svg_id": "gd22-flowchart-sink-5",
+      "label": "Sink",
+      "shape": "rect",
+      "x": 449.2734375,
+      "y": 35.38989648387373,
+      "width": 94.0078125,
+      "height": 48.625,
+      "parent": null
+    },
+    {
+      "id": "store",
+      "svg_id": "gd22-flowchart-store-3",
+      "label": "Store",
+      "shape": "stadium",
+      "x": 316.6328125,
+      "y": 31.08870866551377,
+      "width": 57.640625,
+      "height": 57.22737563671992,
+      "parent": "zone"
+    },
+    {
+      "id": "api",
+      "svg_id": "gd22-flowchart-api-1",
+      "label": "API",
+      "shape": "rect",
+      "x": 181.3203125,
+      "y": 35.38989648387373,
+      "width": 85.3125,
+      "height": 48.625,
+      "parent": "zone"
+    },
+    {
+      "id": "client",
+      "svg_id": "gd22-flowchart-client-0",
+      "label": "Client",
+      "shape": "rect",
+      "x": 0.0,
+      "y": 35.38989648387373,
+      "width": 106.3203125,
+      "height": 48.625,
+      "parent": null
+    }
+  ],
+  "clusters": [
+    {
+      "id": "zone",
+      "svg_id": "gd22-zone",
+      "label": "Trust Zone",
+      "x": 156.3203125,
+      "y": 0.0,
+      "width": 242.953125,
+      "height": 119.40479296774745,
+      "parent": null,
+      "depth": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "L_store_sink_0",
+      "source": "store",
+      "target": "sink",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          374.273,
+          59.702
+        ],
+        [
+          445.273,
+          59.702
+        ]
+      ],
+      "start_point": [
+        374.273,
+        59.702
+      ],
+      "end_point": [
+        445.273,
+        59.702
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_api_store_0",
+      "source": "api",
+      "target": "store",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          266.633,
+          59.702
+        ],
+        [
+          312.633,
+          59.702
+        ]
+      ],
+      "start_point": [
+        266.633,
+        59.702
+      ],
+      "end_point": [
+        312.633,
+        59.702
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_client_api_0",
+      "source": "client",
+      "target": "api",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          106.32,
+          59.702
+        ],
+        [
+          177.32,
+          59.702
+        ]
+      ],
+      "start_point": [
+        106.32,
+        59.702
+      ],
+      "end_point": [
+        177.32,
+        59.702
+      ],
+      "handle_point": null
+    }
+  ],
+  "warnings": []
+}

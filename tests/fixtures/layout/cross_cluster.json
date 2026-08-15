@@ -1,0 +1,157 @@
+{
+  "version": "1",
+  "provenance": {
+    "mermaid_version": "bundled-in-mermaidx-0.9.4",
+    "renderer": "mermaidx",
+    "renderer_version": "0.9.4",
+    "source_sha256": "6146840731f721e93ecb838b00d5a6ad1c743ac435a1d9554e9852a0ab7dc021",
+    "generated_at": "FIXED"
+  },
+  "canvas": {
+    "width": 315.921875,
+    "height": 152.28125,
+    "origin_offset": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "direction": "LR"
+  },
+  "nodes": [
+    {
+      "id": "b",
+      "svg_id": "gd6-flowchart-b-1",
+      "label": "B",
+      "shape": "rect",
+      "x": 195.9453125,
+      "y": 35.34375,
+      "width": 70.9765625,
+      "height": 48.625,
+      "parent": "right"
+    },
+    {
+      "id": "a",
+      "svg_id": "gd6-flowchart-a-0",
+      "label": "A",
+      "shape": "rect",
+      "x": 25.0,
+      "y": 35.34375,
+      "width": 70.9453125,
+      "height": 48.625,
+      "parent": "left"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "left",
+      "svg_id": "gd6-left",
+      "label": "Left Zone",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 120.9453125,
+      "height": 118.96875,
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "id": "right",
+      "svg_id": "gd6-right",
+      "label": "Right Zone",
+      "x": 170.9453125,
+      "y": 0.0,
+      "width": 120.9765625,
+      "height": 118.96875,
+      "parent": null,
+      "depth": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "L_b_a_0",
+      "source": "b",
+      "target": "a",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          195.945,
+          71.189
+        ],
+        [
+          175.09263425925926,
+          77.1817037037037
+        ],
+        [
+          154.27870370370368,
+          79.26285185185186
+        ],
+        [
+          121.57900000000001,
+          78.164
+        ],
+        [
+          99.749,
+          72.423
+        ]
+      ],
+      "start_point": [
+        195.945,
+        71.189
+      ],
+      "end_point": [
+        99.749,
+        72.423
+      ],
+      "handle_point": [
+        154.27870370370368,
+        79.26285185185186
+      ]
+    },
+    {
+      "id": "L_a_b_0",
+      "source": "a",
+      "target": "b",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          95.945,
+          53.79
+        ],
+        [
+          120.945,
+          50.345
+        ],
+        [
+          145.945,
+          49.656
+        ],
+        [
+          170.288,
+          50.236
+        ],
+        [
+          191.999,
+          53.137
+        ]
+      ],
+      "start_point": [
+        95.945,
+        53.79
+      ],
+      "end_point": [
+        191.999,
+        53.137
+      ],
+      "handle_point": [
+        146.0265772266714,
+        61.65572271163333
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "parallel_edge_offset",
+      "detail": "offset handle of parallel edge 'L_a_b_0' by 12px"
+    }
+  ]
+}

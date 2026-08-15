@@ -1,0 +1,10 @@
+flowchart TB
+  user[User] --> proxy[Proxy]
+  subgraph outer[Outer Boundary]
+    svc[Service]
+    subgraph inner[Inner Boundary]
+      db[(Database)]
+    end
+    svc --> db
+  end
+  proxy --> svc

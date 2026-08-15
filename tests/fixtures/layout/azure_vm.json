@@ -1,0 +1,263 @@
+{
+  "version": "1",
+  "provenance": {
+    "mermaid_version": "bundled-in-mermaidx-0.9.4",
+    "renderer": "mermaidx",
+    "renderer_version": "0.9.4",
+    "source_sha256": "ef5824f4574a884a25e8db21033f41693f30011bf4812ba4a28f6e59c99c8d50",
+    "generated_at": "FIXED"
+  },
+  "canvas": {
+    "width": 845.90625,
+    "height": 350.63159150499615,
+    "origin_offset": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "direction": "LR"
+  },
+  "nodes": [
+    {
+      "id": "log",
+      "svg_id": "gd4-flowchart-log-9",
+      "label": "Log Analytics",
+      "shape": "rect",
+      "x": 630.3046875,
+      "y": 268.69409150499615,
+      "width": 166.6015625,
+      "height": 48.625,
+      "parent": null
+    },
+    {
+      "id": "kv",
+      "svg_id": "gd4-flowchart-kv-7",
+      "label": "Key Vault",
+      "shape": "stadium",
+      "x": 667.85546875,
+      "y": 138.69961377624375,
+      "width": 91.5,
+      "height": 65.23231573464105,
+      "parent": "azure"
+    },
+    {
+      "id": "disk",
+      "svg_id": "gd4-flowchart-disk-5",
+      "label": "Managed Disk",
+      "shape": "stadium",
+      "x": 649.5234375,
+      "y": 28.725876282888414,
+      "width": 128.1640625,
+      "height": 71.48569921635556,
+      "parent": "azure"
+    },
+    {
+      "id": "vm",
+      "svg_id": "gd4-flowchart-vm-3",
+      "label": "Virtual Machine",
+      "shape": "rect",
+      "x": 395.609375,
+      "y": 147.0032716435643,
+      "width": 184.6953125,
+      "height": 48.625,
+      "parent": "azure"
+    },
+    {
+      "id": "lb",
+      "svg_id": "gd4-flowchart-lb-1",
+      "label": "Load Balancer",
+      "shape": "rect",
+      "x": 171.46875,
+      "y": 147.0032716435643,
+      "width": 174.140625,
+      "height": 48.625,
+      "parent": "azure"
+    },
+    {
+      "id": "user",
+      "svg_id": "gd4-flowchart-user-0",
+      "label": "User",
+      "shape": "rect",
+      "x": 0.0,
+      "y": 147.0032716435643,
+      "width": 96.46875,
+      "height": 48.625,
+      "parent": null
+    }
+  ],
+  "clusters": [
+    {
+      "id": "azure",
+      "svg_id": "gd4-azure",
+      "label": "Azure Subscription",
+      "x": 146.46875,
+      "y": 0.0,
+      "width": 675.4375,
+      "height": 233.69409150499615,
+      "parent": null,
+      "depth": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "L_vm_log_0",
+      "source": "vm",
+      "target": "log",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          579.432,
+          195.628
+        ],
+        [
+          593.95425,
+          200.392
+        ],
+        [
+          613.682,
+          211.963
+        ],
+        [
+          681.442,
+          266.129
+        ]
+      ],
+      "start_point": [
+        579.432,
+        195.628
+      ],
+      "end_point": [
+        681.442,
+        266.129
+      ],
+      "handle_point": [
+        613.682,
+        211.963
+      ]
+    },
+    {
+      "id": "L_vm_kv_0",
+      "source": "vm",
+      "target": "kv",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          580.305,
+          171.316
+        ],
+        [
+          663.855,
+          171.316
+        ]
+      ],
+      "start_point": [
+        580.305,
+        171.316
+      ],
+      "end_point": [
+        663.855,
+        171.316
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_vm_disk_0",
+      "source": "vm",
+      "target": "disk",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          514.659,
+          147.003
+        ],
+        [
+          564.1567505634862,
+          102.92485649887304
+        ],
+        [
+          596.9,
+          78.224
+        ],
+        [
+          608.9916160000002,
+          71.51156000000002
+        ],
+        [
+          622.117106962963,
+          66.55568444444444
+        ],
+        [
+          645.523,
+          64.469
+        ]
+      ],
+      "start_point": [
+        514.659,
+        147.003
+      ],
+      "end_point": [
+        645.523,
+        64.469
+      ],
+      "handle_point": [
+        596.9,
+        78.224
+      ]
+    },
+    {
+      "id": "L_lb_vm_0",
+      "source": "lb",
+      "target": "vm",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          345.609,
+          171.316
+        ],
+        [
+          391.609,
+          171.316
+        ]
+      ],
+      "start_point": [
+        345.609,
+        171.316
+      ],
+      "end_point": [
+        391.609,
+        171.316
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_user_lb_0",
+      "source": "user",
+      "target": "lb",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          96.469,
+          171.316
+        ],
+        [
+          167.469,
+          171.316
+        ]
+      ],
+      "start_point": [
+        96.469,
+        171.316
+      ],
+      "end_point": [
+        167.469,
+        171.316
+      ],
+      "handle_point": null
+    }
+  ],
+  "warnings": []
+}

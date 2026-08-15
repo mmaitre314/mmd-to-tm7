@@ -1,0 +1,6 @@
+flowchart LR
+  client[Client] --> api[API]
+  subgraph zone[Trust Zone]
+    api --> store[(Store)]
+  end
+  store --> sink[Sink]

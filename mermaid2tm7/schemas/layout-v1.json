@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/mmaitre314/mmd-to-tm7/schemas/layout-v1.json",
+  "title": "mermaid2tm7 layout",
+  "type": "object",
+  "required": ["version", "provenance", "canvas", "nodes", "clusters", "edges"],
+  "additionalProperties": true,
+  "properties": {
+    "version": { "const": "1" },
+    "provenance": {
+      "type": "object",
+      "required": ["mermaid_version", "renderer", "renderer_version", "source_sha256", "generated_at"],
+      "properties": {
+        "mermaid_version": { "type": "string" },
+        "renderer": { "type": "string", "enum": ["mermaidx", "mmdc", "unknown"] },
+        "renderer_version": { "type": "string" },
+        "source_sha256": { "type": "string" },
+        "generated_at": { "type": "string" }
+      }
+    },
+    "canvas": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "number" },
+        "height": { "type": "number" },
+        "origin_offset": {
+          "type": "object",
+          "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+        },
+        "direction": { "type": "string", "enum": ["LR", "RL", "TB", "BT"] }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "svg_id", "label", "shape", "x", "y", "width", "height"],
+        "properties": {
+          "id": { "type": "string" },
+          "svg_id": { "type": "string" },
+          "label": { "type": "string" },
+          "shape": {
+            "type": "string",
+            "enum": ["rect", "rounded", "stadium", "circle", "cylinder", "hexagon", "diamond", "unknown"]
+          },
+          "x": { "type": "number" },
+          "y": { "type": "number" },
+          "width": { "type": "number", "exclusiveMinimum": 0 },
+          "height": { "type": "number", "exclusiveMinimum": 0 },
+          "parent": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "clusters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "svg_id", "label", "x", "y", "width", "height", "depth"],
+        "properties": {
+          "id": { "type": "string" },
+          "svg_id": { "type": "string" },
+          "label": { "type": "string" },
+          "x": { "type": "number" },
+          "y": { "type": "number" },
+          "width": { "type": "number", "exclusiveMinimum": 0 },
+          "height": { "type": "number", "exclusiveMinimum": 0 },
+          "parent": { "type": ["string", "null"] },
+          "depth": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "target", "points"],
+        "properties": {
+          "id": { "type": "string" },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "label": { "type": ["string", "null"] },
+          "label_pos": {
+            "type": ["object", "null"],
+            "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+          },
+          "points": {
+            "type": "array",
+            "items": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }
+          },
+          "start_point": { "type": ["array", "null"], "items": { "type": "number" } },
+          "end_point": { "type": ["array", "null"], "items": { "type": "number" } },
+          "handle_point": { "type": ["array", "null"], "items": { "type": "number" } }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "detail"],
+        "properties": {
+          "code": { "type": "string" },
+          "detail": { "type": "string" }
+        }
+      }
+    }
+  }
+}

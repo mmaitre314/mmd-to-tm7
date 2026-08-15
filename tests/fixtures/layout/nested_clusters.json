@@ -1,0 +1,170 @@
+{
+  "version": "1",
+  "provenance": {
+    "mermaid_version": "bundled-in-mermaidx-0.9.4",
+    "renderer": "mermaidx",
+    "renderer_version": "0.9.4",
+    "source_sha256": "011a5ed7edd77c91734a8f94e50d192816b203e7a24a7a01ca32bea526466b86",
+    "generated_at": "FIXED"
+  },
+  "canvas": {
+    "width": 225.34375,
+    "height": 483.9232901198902,
+    "origin_offset": {
+      "x": 8.0,
+      "y": 8.0
+    },
+    "direction": "TB"
+  },
+  "nodes": [
+    {
+      "id": "db",
+      "svg_id": "gd20-flowchart-db-3",
+      "label": "Database",
+      "shape": "stadium",
+      "x": 55.0,
+      "y": 340.64232992448945,
+      "width": 91.34375,
+      "height": 65.20113027091134,
+      "parent": "inner"
+    },
+    {
+      "id": "svc",
+      "svg_id": "gd20-flowchart-svc-2",
+      "label": "Service",
+      "shape": "rect",
+      "x": 41.10546875,
+      "y": 222.25,
+      "width": 119.1328125,
+      "height": 48.625,
+      "parent": "outer"
+    },
+    {
+      "id": "proxy",
+      "svg_id": "gd20-flowchart-proxy-1",
+      "label": "Proxy",
+      "shape": "rect",
+      "x": 48.1953125,
+      "y": 98.625,
+      "width": 104.953125,
+      "height": 48.625,
+      "parent": null
+    },
+    {
+      "id": "user",
+      "svg_id": "gd20-flowchart-user-0",
+      "label": "User",
+      "shape": "rect",
+      "x": 52.4375,
+      "y": 0.0,
+      "width": 96.46875,
+      "height": 48.625,
+      "parent": null
+    }
+  ],
+  "clusters": [
+    {
+      "id": "inner",
+      "svg_id": "gd20-inner",
+      "label": "Inner Boundary",
+      "x": 20.0,
+      "y": 320.875,
+      "width": 161.34375,
+      "height": 104.73579011989023,
+      "parent": "outer",
+      "depth": 1
+    },
+    {
+      "id": "outer",
+      "svg_id": "gd20-outer",
+      "label": "Outer Boundary",
+      "x": 0.0,
+      "y": 197.25,
+      "width": 201.34375,
+      "height": 253.36079011989023,
+      "parent": null,
+      "depth": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "L_proxy_svc_0",
+      "source": "proxy",
+      "target": "svc",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          100.672,
+          147.25
+        ],
+        [
+          100.672,
+          218.25
+        ]
+      ],
+      "start_point": [
+        100.672,
+        147.25
+      ],
+      "end_point": [
+        100.672,
+        218.25
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_svc_db_0",
+      "source": "svc",
+      "target": "db",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          100.672,
+          270.875
+        ],
+        [
+          100.672,
+          341.875
+        ]
+      ],
+      "start_point": [
+        100.672,
+        270.875
+      ],
+      "end_point": [
+        100.672,
+        341.875
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_user_proxy_0",
+      "source": "user",
+      "target": "proxy",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          100.672,
+          48.625
+        ],
+        [
+          100.672,
+          94.625
+        ]
+      ],
+      "start_point": [
+        100.672,
+        48.625
+      ],
+      "end_point": [
+        100.672,
+        94.625
+      ],
+      "handle_point": null
+    }
+  ],
+  "warnings": []
+}

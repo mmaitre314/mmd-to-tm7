@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mermaid2tm7"
+version = "0.1.0"
+description = "Convert a Mermaid flowchart's rendered geometry into a Microsoft Threat Modeling Tool (.tm7) file"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "mmaitre314" }]
+keywords = ["mermaid", "threat-modeling", "tm7", "svg", "dfd"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Security",
+]
+dependencies = [
+    # Default renderer: real Mermaid inside QuickJS-ng, no Node/browser required.
+    # Pinned to an exact version because Mermaid layout changes across minors
+    # silently move every user's diagram (docs/05-package-and-cli-spec.md).
+    "mermaidx==0.9.4",
+    "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+# The mmdc renderer shells out to @mermaid-js/mermaid-cli (Node + Chromium),
+# so there is no Python dependency to install here — this extra only documents
+# the requirement and is a place to hang a check script.
+mmdc = []
+dev = [
+    "pytest>=7",
+    "ruff>=0.1",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+mermaid2tm7 = "mermaid2tm7.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mmaitre314/mmd-to-tm7"
+
+[tool.setuptools]
+packages = [
+    "mermaid2tm7",
+    "mermaid2tm7.extract",
+    "mermaid2tm7.extract.renderers",
+    "mermaid2tm7.layout",
+    "mermaid2tm7.tm7",
+]
+
+[tool.setuptools.package-data]
+mermaid2tm7 = ["py.typed", "schemas/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+markers = [
+    "renderer: tests that re-render Mermaid (need mermaidx/mmdc)",
+    "windows: tests that need tm7_validate.exe on Windows",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

@@ -1,0 +1,258 @@
+{
+  "version": "1",
+  "provenance": {
+    "mermaid_version": "bundled-in-mermaidx-0.9.4",
+    "renderer": "mermaidx",
+    "renderer_version": "0.9.4",
+    "source_sha256": "74fb89079c6c5f81105fb8ff9fa4d0dc58f28ea1f904c09d1e090bdd1e1509b6",
+    "generated_at": "FIXED"
+  },
+  "canvas": {
+    "width": 145.3671875,
+    "height": 732.2829071969697,
+    "origin_offset": {
+      "x": 8.5,
+      "y": 8.0
+    },
+    "direction": "TB"
+  },
+  "nodes": [
+    {
+      "id": "di",
+      "svg_id": "gd2-flowchart-di-11",
+      "label": "Diamond",
+      "shape": "diamond",
+      "x": 0.0,
+      "y": 578.1032196969697,
+      "width": 120.8671875,
+      "height": 120.8671875,
+      "parent": null
+    },
+    {
+      "id": "he",
+      "svg_id": "gd2-flowchart-he-9",
+      "label": "Hexagon",
+      "shape": "hexagon",
+      "x": 8.41015625,
+      "y": 494.47821969696975,
+      "width": 103.046875,
+      "height": 33.625,
+      "parent": null
+    },
+    {
+      "id": "cy",
+      "svg_id": "gd2-flowchart-cy-7",
+      "label": "Cylinder",
+      "shape": "stadium",
+      "x": 19.30859375,
+      "y": 386.27401947588226,
+      "width": 81.25,
+      "height": 63.086430745205234,
+      "parent": null
+    },
+    {
+      "id": "ci",
+      "svg_id": "gd2-flowchart-ci-5",
+      "label": "Circle",
+      "shape": "circle",
+      "x": 29.79296875,
+      "y": 280.875,
+      "width": 60.28125,
+      "height": 60.28125,
+      "parent": null
+    },
+    {
+      "id": "st",
+      "svg_id": "gd2-flowchart-st-3",
+      "label": "Stadium",
+      "shape": "stadium",
+      "x": 14.957856740125933,
+      "y": 197.25,
+      "width": 89.95147401974813,
+      "height": 33.625,
+      "parent": null
+    },
+    {
+      "id": "ro",
+      "svg_id": "gd2-flowchart-ro-1",
+      "label": "Rounded",
+      "shape": "rounded",
+      "x": 9.26171875,
+      "y": 98.625,
+      "width": 101.34375,
+      "height": 48.625,
+      "parent": null
+    },
+    {
+      "id": "r",
+      "svg_id": "gd2-flowchart-r-0",
+      "label": "Rect",
+      "shape": "rect",
+      "x": 11.91796875,
+      "y": 0.0,
+      "width": 96.03125,
+      "height": 48.625,
+      "parent": null
+    }
+  ],
+  "clusters": [],
+  "edges": [
+    {
+      "id": "L_he_di_0",
+      "source": "he",
+      "target": "di",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          60.434,
+          528.603
+        ],
+        [
+          59.934,
+          574.103
+        ]
+      ],
+      "start_point": [
+        60.434,
+        528.603
+      ],
+      "end_point": [
+        59.934,
+        574.103
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_cy_he_0",
+      "source": "cy",
+      "target": "he",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          59.934,
+          444.478
+        ],
+        [
+          60.355000000000004,
+          490.979
+        ]
+      ],
+      "start_point": [
+        59.934,
+        444.478
+      ],
+      "end_point": [
+        60.355000000000004,
+        490.979
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_ci_cy_0",
+      "source": "ci",
+      "target": "cy",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          59.934,
+          341.156
+        ],
+        [
+          59.934,
+          387.156
+        ]
+      ],
+      "start_point": [
+        59.934,
+        341.156
+      ],
+      "end_point": [
+        59.934,
+        387.156
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_st_ci_0",
+      "source": "st",
+      "target": "ci",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          60.434,
+          231.375
+        ],
+        [
+          59.934,
+          276.875
+        ]
+      ],
+      "start_point": [
+        60.434,
+        231.375
+      ],
+      "end_point": [
+        59.934,
+        276.875
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_ro_st_0",
+      "source": "ro",
+      "target": "st",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          59.934,
+          147.25
+        ],
+        [
+          60.355000000000004,
+          193.751
+        ]
+      ],
+      "start_point": [
+        59.934,
+        147.25
+      ],
+      "end_point": [
+        60.355000000000004,
+        193.751
+      ],
+      "handle_point": null
+    },
+    {
+      "id": "L_r_ro_0",
+      "source": "r",
+      "target": "ro",
+      "label": null,
+      "label_pos": null,
+      "points": [
+        [
+          59.934,
+          48.625
+        ],
+        [
+          59.934,
+          94.625
+        ]
+      ],
+      "start_point": [
+        59.934,
+        48.625
+      ],
+      "end_point": [
+        59.934,
+        94.625
+      ],
+      "handle_point": null
+    }
+  ],
+  "warnings": []
+}
